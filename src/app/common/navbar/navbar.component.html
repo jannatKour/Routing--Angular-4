@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="w3-container " style="padding: 15px;">
+    <ul class="nav nav-pills">
+      <li role="presentation" *ngIf='role==="ADMINISTRATOR"'>
+        <a routerLink="/adminHome">Home</a>
+        <a routerLink="/settings">Settings</a>
+        <a routerLink="/announcements">Announcements</a>
+      </li>
+      <li role="presentation" *ngIf='role==="EMPLOYEE"'>
+        <a routerLink="/employeeHome">Home</a>
+        <a routerLink="/delivery">Delivery</a>
+        <a routerLink="/bd">Business Development</a>
+        <a routerLink="/it">IT Support</a>
+      </li>
+      <li role="presentation" *ngIf='role==="HR"'>
+        <a routerLink="/hrHome">Home</a>
+        <a routerLink="/recruitment">Recruitment</a>
+        <a routerLink="/finance">Finance</a>
+        <a routerLink="/admin">Admin</a>
+      </li>
+    </ul>
+  </div>
+  <!-- div class = "w3-container" -->
+  <router-outlet></router-outlet>
+</div>
+<!-- container -->

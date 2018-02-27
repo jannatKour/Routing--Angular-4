@@ -1,0 +1,11 @@
+.w3-container{
+  background-color: #76323F;
+}
+li{
+  color:#e0b8bf;
+  display: inline-flex;
+}
+a{
+  color: #e0b8bf;
+  font-size: 20px;
+}

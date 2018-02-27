@@ -1,0 +1,23 @@
+.nav-pills a{
+  color: #e0b8bf;
+  font-weight: bold;
+  font-size: 16px;
+  /* text-decoration-color: green; */
+}
+.nav-pills a:hover{
+  color: black ;
+}
+.nav-pills a:active{
+  color: #565656;
+}
+.panel{
+  background-color:#565656;
+  margin-bottom:0px;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
+  color: #b34d5f;
+  background-color:  #bfbfbf;
+}
+.style{
+  border-color: white;
+}
