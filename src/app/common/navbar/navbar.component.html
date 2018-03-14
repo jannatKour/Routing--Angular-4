@@ -6,8 +6,8 @@
         <a routerLink="/settings">Settings</a>
         <a routerLink="/announcements">Announcements</a>
       </li>
-      <li role="presentation" *ngIf='role==="EMPLOYEE"'>
-        <a routerLink="/employeeHome">Home</a>
+      <li *ngIf='role==="EMPLOYEE"'>
+        <a routerLink="/employee-Home">Home</a>
         <a routerLink="/delivery">Delivery</a>
         <a routerLink="/bd">Business Development</a>
         <a routerLink="/it">IT Support</a>

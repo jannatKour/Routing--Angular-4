@@ -7,11 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 roles:any;
-  constructor() { }
-changeMenuItems(id){
-  this.roles=id;
-  console.log(this.roles);
-}
+  constructor() { 
+    
+  }
   ngOnInit() {
   }
 

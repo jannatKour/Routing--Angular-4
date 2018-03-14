@@ -8,23 +8,25 @@ import { EmployeeMainComponent } from "./employee-main/employee-main.component";
 export const EMPLOYEE_ROUTES: Routes = [
     {
       path: 'employee',
-      component: EmployeeMainComponent
-    },
-    {
-      path: 'employee-home',
-      component: EmployeeHomeComponent
-    },
-    {
-      path: 'delivery',
-      component: DeliveryTeamComponent
-    },
-    {
-      path: 'it',
-      component: ItTeamComponent
-    },
-    {
-      path: 'bd',
-      component: BdTeamComponent
+      component: EmployeeMainComponent,
+      children: [
+        {
+          path: 'employee-home',
+          component: EmployeeHomeComponent
+        },
+        {
+          path: 'delivery',
+          component: DeliveryTeamComponent
+        },
+        {
+          path: 'it',
+          component: ItTeamComponent
+        },
+        {
+          path: 'bd',
+          component: BdTeamComponent
+        }
+      ]
     }
   ];
   

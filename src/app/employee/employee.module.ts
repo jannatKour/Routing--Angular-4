@@ -7,15 +7,15 @@ import { ItTeamComponent } from './it-team/it-team.component';
 import { RouterModule } from '@angular/router';
 import { EMPLOYEE_ROUTES } from './employee.routes';
 import { EmployeeMainComponent } from './employee-main/employee-main.component';
-import { MenuComponent } from '../common/menu/menu.component';
-import { NavbarComponent } from '../common/navbar/navbar.component';
+// import { MenuComponent } from '../common/menu/menu.component';
+// import { NavbarComponent } from '../common/navbar/navbar.component';
 
 @NgModule({
   imports: [
     CommonModule,
     RouterModule.forChild(EMPLOYEE_ROUTES)
   ],
-  declarations: [EmployeeHomeComponent, BdTeamComponent, DeliveryTeamComponent, ItTeamComponent, EmployeeMainComponent, MenuComponent, NavbarComponent],
+  declarations: [EmployeeHomeComponent, BdTeamComponent, DeliveryTeamComponent, ItTeamComponent, EmployeeMainComponent],
   exports: [
     EmployeeHomeComponent,
     BdTeamComponent,
